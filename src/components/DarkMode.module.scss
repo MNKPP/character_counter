@@ -1,0 +1,14 @@
+.dark-mode-switch {
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 6px;
+}
+
+.dark-mode-switch-dark {
+  background-color: var(--neutral-700);
+}
+
+.dark-mode-switch-light {
+  background-color: var(--neutral-100);
+}

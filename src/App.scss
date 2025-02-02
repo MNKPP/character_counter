@@ -1,6 +1,7 @@
 :root {
     --neutral-100: #F2F2F7;
     --neutral-200: #E4E4EF;
+    --neutral-700: #2A2B37;
 }
 
 * {
@@ -22,5 +23,8 @@
 // CONTAINERS
 
 .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 16px;
 }
