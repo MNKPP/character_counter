@@ -15,8 +15,8 @@ function App() {
 
   return (
     <div className={isDarkMode ? 'dark-mode' : 'light-mode'}>
-        <div>
-            <Header />
+        <div className="header">
+            <Header isDarkMode={isDarkMode}/>
             <DarkMode isDarkMode={isDarkMode} onDarkMode={handleClickDarkMode}/>
         </div>
         <TextArea />
