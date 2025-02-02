@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Header from "./containers/Header.jsx";
 import TextArea from "./containers/TextArea.jsx";
 import TextCounter from "./containers/TextCounter.jsx";

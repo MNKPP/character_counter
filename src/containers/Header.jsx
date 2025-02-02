@@ -1,5 +1,3 @@
-import DarkMode from "../components/DarkMode.jsx";
-
 function Header() {
     return (
         <div className="header">
