@@ -1,0 +1,11 @@
+.text-input {
+  background-color: var(--neutral-800);
+  color: var(--neutral-200);
+  border: 3px solid var(--neutral-700);
+  resize: none;
+  width: 100%;
+  min-height: 200px;
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 20px;
+}

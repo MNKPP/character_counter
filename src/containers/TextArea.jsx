@@ -1,6 +1,13 @@
+import TextInput from "../components/TextInput.jsx";
+import CheckboxSetting from "../components/CheckboxSetting.jsx";
+
 function TextArea() {
     return (
-        <h1>TEXT AREA</h1>
+        <div className="text-area">
+            <TextInput />
+            {/*<CheckboxSetting />*/}
+            {/*<CheckboxSetting />*/}
+        </div>
     )
 }
 
