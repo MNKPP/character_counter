@@ -4,7 +4,7 @@ import IconMoon from '../assets/images/icon-moon.svg';
 
 function DarkMode({isDarkMode, onDarkMode}) {
 
-    const iconSrc = isDarkMode ? IconMoon : IconSun;
+    const iconSrc = isDarkMode ? IconSun : IconMoon;
     const alt = isDarkMode ? 'Icon Moon' : 'Icon Sun';
 
     return (

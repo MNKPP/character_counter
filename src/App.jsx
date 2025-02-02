@@ -19,6 +19,7 @@ function App() {
             <Header isDarkMode={isDarkMode}/>
             <DarkMode isDarkMode={isDarkMode} onDarkMode={handleClickDarkMode}/>
         </div>
+        <h1>Analyze your text in real-time.</h1>
         <TextArea />
         <TextCounter />
         <TextDensity />
