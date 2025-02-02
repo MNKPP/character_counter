@@ -1,4 +1,11 @@
+@font-face {
+    font-family: "dm-sans";
+    src: url("./assets/fonts/DM_Sans/DMSans-VariableFont_opsz,wght.ttf");
+}
+
 :root {
+    --font-family-dm-sans: "dm-sans";
+
     --neutral-100: #F2F2F7;
     --neutral-200: #E4E4EF;
     --neutral-700: #2A2B37;
@@ -21,11 +28,13 @@
 }
 
 h1 {
+    font-family: var(--font-family-dm-sans);
     padding: 16px;
     letter-spacing: 1px;
     font-size: 40px;
     text-align: center;
     font-weight: bold;
+    margin: 40px 0;
 }
 
 // CONTAINERS
