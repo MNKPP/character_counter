@@ -1,6 +1,11 @@
-function CheckboxSetting() {
+import s from './CheckboxSetting.module.scss'
+
+function CheckboxSetting({label}) {
     return (
-        <input type="checkbox" />
+        <div className={s.checkboxSetting}>
+            <input type="checkbox" name="input"/>
+            <label htmlFor="input">{label}</label>
+        </div>
     )
 }
 

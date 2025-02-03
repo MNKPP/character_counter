@@ -5,8 +5,11 @@ function TextArea() {
     return (
         <div className="text-area">
             <TextInput />
-            {/*<CheckboxSetting />*/}
-            {/*<CheckboxSetting />*/}
+            <div className="settings">
+                <CheckboxSetting label="Exclude Spaces"/>
+                <CheckboxSetting label="Set Character Limit"/>
+                <p>Approx. reading time: 1 minute</p>
+            </div>
         </div>
     )
 }
