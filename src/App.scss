@@ -18,6 +18,10 @@
     padding: 0;
 }
 
+body {
+    font-family: var(--font-family-dm-sans);
+}
+
 .dark-mode {
     background-image: url("./assets/images/bg-dark-theme.png");
     color: var(--neutral-200);
@@ -41,7 +45,6 @@
 }
 
 h1 {
-    font-family: var(--font-family-dm-sans);
     padding: 16px;
     letter-spacing: 1px;
     font-size: 40px;
@@ -60,9 +63,5 @@ h1 {
 }
 
 .text-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     padding: 0 16px;
 }

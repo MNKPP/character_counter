@@ -2,10 +2,40 @@
   font-size: 16px;
   margin-bottom: 12px;
 
-  input {
-    margin-right: 10px;
+  label {
+    display: flex;
+    align-items: center;
+  }
+
+  input[type="checkbox"] {
+    position: relative;
     width: 16px;
     height: 16px;
-    accent-color: transparent;
+    margin-right: 10px;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"]:checked {
+    opacity: 1;
+    accent-color: #D3A0FA;
+  }
+
+  input[type="checkbox"]:hover {
+    accent-color: #C27CF8;
+  }
+
+  input[type="checkbox"]:focus {
+    accent-color: #D3A0FA;
+  }
+
+  .checkbox-style {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1px solid var(--neutral-200);
+    cursor: pointer;
+    position: absolute;
   }
 }

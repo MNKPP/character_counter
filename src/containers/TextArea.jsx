@@ -4,7 +4,7 @@ import CheckboxSetting from "../components/CheckboxSetting.jsx";
 function TextArea() {
     return (
         <div className="text-area">
-            <TextInput />
+                <TextInput />
             <div className="settings">
                 <CheckboxSetting label="Exclude Spaces"/>
                 <CheckboxSetting label="Set Character Limit"/>
