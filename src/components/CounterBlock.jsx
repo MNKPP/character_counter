@@ -7,7 +7,7 @@ function CounterBlock() {
                 <span>278</span>
                 <p>Total Characters</p>
             </div>
-            <img src="../assets/images/pattern-character-count.svg" alt="pattern"/>
+            <img src="./src/assets/images/pattern-character-count.svg" alt="pattern"/>
         </div>
     )
 }
