@@ -1,8 +1,10 @@
 import s from './TextInput.module.scss';
 
-function TextInput() {
+function TextInput({ onTextAreaChange, value }) {
+
+
     return (
-        <textarea className={s.textInput}></textarea>
+        <textarea className={s.textInput} onChange={onTextAreaChange} value={value}></textarea>
     )
 }
 

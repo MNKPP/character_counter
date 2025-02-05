@@ -8,9 +8,16 @@ import {useState} from "react";
 
 function App() {
     const [isDarkMode, setIsDarkMode] = useState(false);
+    const [valueTextArea, setValueTextArea] = useState('');
 
     function handleClickDarkMode() {
         setIsDarkMode(!isDarkMode);
+    }
+
+    // J'ai 3 remontées à faire
+    function handleChange(event) {
+        setValueTextArea(event.target.value)
+        console.log(event.target.value);
     }
 
   return (
@@ -20,7 +27,7 @@ function App() {
             <DarkMode isDarkMode={isDarkMode} onDarkMode={handleClickDarkMode}/>
         </div>
         <h1>Analyze your text in real-time.</h1>
-        <TextArea />
+        <TextArea onTextAreaChange={handleChange} valueTextArea={valueTextArea}/>
         <TextCounter />
         <TextDensity />
     </div>
