@@ -1,7 +1,13 @@
+import CounterBlock from "../components/CounterBlock.jsx";
+
 function TextCounter() {
     return (
-        <h1>TEXT COUNTER</h1>
+        <div className="text-counter">
+            <CounterBlock />
+            <CounterBlock />
+            <CounterBlock />
+        </div>
     )
 }
 
-export default TextCounter
+export default TextCounter;
