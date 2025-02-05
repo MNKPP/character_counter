@@ -19,7 +19,7 @@ function CounterBlock({src, alt, variant}) {
                 <span>278</span>
                 <p>Total Characters</p>
             </div>
-            <img src={src} alt="alt"/>
+            <img src={src} alt={alt}/>
         </div>
     )
 }
