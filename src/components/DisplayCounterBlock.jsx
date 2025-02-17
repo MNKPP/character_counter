@@ -1,18 +1,19 @@
 import s from './DisplayCounterBlock.module.scss';
 import CounterBlock from './CounterBlock.jsx';
+import { countCharacter, countWord, countSentence } from "../utils/counterFunctions.js";
 
-function DisplayCounterBlock({ src, alt, variant, countType }) {
+function DisplayCounterBlock({ valueTextArea, src, alt, variant, countType }) {
 
     const variantClass = s[variant] || '';
 
     function getCount() {
         switch (countType) {
             case 'character':
-                return 278;
+                return countCharacter(valueTextArea) || 0;
             case 'word':
-                return 100;
+                return countWord(valueTextArea) || 0;
             case 'sentence':
-                return 10;
+                return countSentence(valueTextArea) || 0;
             default:
                 return 0;
         }
