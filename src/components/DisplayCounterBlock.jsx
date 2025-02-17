@@ -2,7 +2,7 @@ import s from './DisplayCounterBlock.module.scss';
 import CounterBlock from './CounterBlock.jsx';
 import { countCharacter, countWord, countSentence } from "../utils/counterFunctions.js";
 
-function DisplayCounterBlock({ valueTextArea, src, alt, variant, countType }) {
+function DisplayCounterBlock({ valueTextArea, src, alt, variant, countType, text }) {
 
     const variantClass = s[variant] || '';
 
@@ -21,7 +21,7 @@ function DisplayCounterBlock({ valueTextArea, src, alt, variant, countType }) {
 
     return (
         <div className={`${s.counterBlock} ${variantClass}`}>
-            <CounterBlock counter={getCount()} text={countType} />
+            <CounterBlock counter={getCount()} text={text} />
             <img src={src} alt={alt} />
         </div>
     );

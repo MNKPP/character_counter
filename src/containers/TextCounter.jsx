@@ -10,6 +10,7 @@ function TextCounter({ valueTextArea }) {
                 alt="Pattern character count"
                 variant="purple"
                 countType="character"
+                text="Total Characters"
             />
             <DisplayCounterBlock
                 valueTextArea={valueTextArea}
@@ -17,6 +18,7 @@ function TextCounter({ valueTextArea }) {
                 alt="Pattern word count"
                 variant="yellow"
                 countType="word"
+                text="Words Count"
             />
             <DisplayCounterBlock
                 valueTextArea={valueTextArea}
@@ -24,6 +26,7 @@ function TextCounter({ valueTextArea }) {
                 alt="Pattern sentence count"
                 variant="orange"
                 countType="sentence"
+                text="Sentence count"
             />
         </div>
     )
