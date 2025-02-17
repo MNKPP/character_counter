@@ -14,10 +14,8 @@ function App() {
         setIsDarkMode(!isDarkMode);
     }
 
-    // J'ai 3 remontées à faire
     function handleChange(event) {
         setValueTextArea(event.target.value)
-        console.log(event.target.value);
     }
 
   return (
@@ -28,7 +26,7 @@ function App() {
         </div>
         <h1>Analyze your text in real-time.</h1>
         <TextArea onTextAreaChange={handleChange} valueTextArea={valueTextArea}/>
-        <TextCounter />
+        <TextCounter valueTextArea={valueTextArea}/>
         <TextDensity />
     </div>
   )
